@@ -23,5 +23,5 @@ func main() {
 }
 
 func mainPage(w http.ResponseWriter, r *http.Request) {
-	tpl.ExecuteTemplate(w, "index3.html", nil)
+	tpl.ExecuteTemplate(w, "index.html", nil)
 }
