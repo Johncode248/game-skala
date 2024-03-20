@@ -74,7 +74,7 @@
     align-items: center;
     
     text-align: center;
-    background-image: linear-gradient(to top right, #e65100 35%, #0e0c0c);
+    background-image: linear-gradient(to top right, yellow 20%, #0e0c0c);
 }
 
 .title{
