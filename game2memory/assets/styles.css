@@ -6,7 +6,7 @@
 html {
     width: 100%;
     height: 100%;
-    background: linear-gradient(325deg,  #6f00fc 0%,#fc7900 50%,#fcc500b9 100%);
+    background: gray; /*linear-gradient(325deg,  #6f00fc 0%,#fc7900 50%,#fcc500b9 100%); */
     /* background: linear-gradient(325deg,  #1c1b1c 0%,#718500 50%,#f55454 100%); */
 
     font-family: Fredoka;
@@ -130,7 +130,7 @@ button.lock{
     border-radius: 5px;
     box-shadow: 0 25px 50px rgb(33 33 33 / 25%);
     /* background: linear-gradient(135deg,  #6f00fc 0%,#fc7900 50%,#fcc700 100%); */
-    background: linear-gradient(135deg,  #ffff00a8 0%,#ff7b00 50%,#ff2a00 100%);
+    background: #fcb900; /*linear-gradient(135deg,  #ffff00a8 0%,#ff7b00 50%,#ff2a00 100%);*/
 
     transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
     backface-visibility: hidden;
