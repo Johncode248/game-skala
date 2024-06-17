@@ -1,15 +1,11 @@
-@font-face {
-    font-family: Fredoka;
-    src: url(./FredokaOne-Regular.ttf);
-}
 
 html {
     width: 100%;
     height: 100%;
-    background: gray; /*linear-gradient(325deg,  #6f00fc 0%,#fc7900 50%,#fcc500b9 100%); */
+    background: #fcb900; /*linear-gradient(325deg,  #6f00fc 0%,#fc7900 50%,#fcc500b9 100%); */
     /* background: linear-gradient(325deg,  #1c1b1c 0%,#718500 50%,#f55454 100%); */
 
-    font-family: Fredoka;
+    font-family: sans-serif;
 }
 
 .msg {
@@ -21,6 +17,8 @@ html {
     padding: 5px;
     box-shadow: 1px 1px 15px 2px rgb(111, 111, 111);
 }
+
+
 
 
 
@@ -68,22 +66,11 @@ button {
     cursor: pointer;
     font-family: Fredoka;
     font-size: 18pt;
-    box-shadow: 5px 3px 15px 1px darkblue;
+    visibility: collapse;
     transition: all 0.5s;
 }
 
-.myBTN {
-    background: #282A3A;
-    color: #FFF;
-    border-radius: 5px;
-    padding: 10px 20px;
-    border: 0;
-    cursor: pointer;
-    font-family: Fredoka;
-    font-size: 18pt;
-    box-shadow: 5px 3px 15px 1px darkblue;
-    transition: all 0.5s;
-}
+
 
 button:hover{
     color: #ed977c;
@@ -102,12 +89,12 @@ button.lock{
 
 .stats {
     color: #FFF;
+    
     font-size: 14pt;
-    border: 1px dotted floralwhite;
-    padding: 10px;
-    width: 100%;
-    box-shadow: 5px 3px 15px 1px darkblue;
-    border-radius: 7px;
+    border: 3px solid white;
+    padding: 13px;
+    /*width: 100%;*/
+    border-radius: 7px;   
 }
 
 .stats .moves,.timer{
@@ -119,8 +106,6 @@ button.lock{
 }
 
 
-
-
 .board-container {
     position: relative;
 }
@@ -130,7 +115,7 @@ button.lock{
     border-radius: 5px;
     box-shadow: 0 25px 50px rgb(33 33 33 / 25%);
     /* background: linear-gradient(135deg,  #6f00fc 0%,#fc7900 50%,#fcc700 100%); */
-    background: #fcb900; /*linear-gradient(135deg,  #ffff00a8 0%,#ff7b00 50%,#ff2a00 100%);*/
+    background: white; /*linear-gradient(135deg,  #ffff00a8 0%,#ff7b00 50%,#ff2a00 100%);*/
 
     transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
     backface-visibility: hidden;
@@ -232,9 +217,4 @@ button.lock{
         line-height: 70px;
         background: #FDF8E6;
     }
-
-    
-
-
-
 }

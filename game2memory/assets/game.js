@@ -3,13 +3,17 @@ const selectors = {
     board: document.querySelector('.board'),
     moves: document.querySelector('.moves'),
     timer: document.querySelector('.timer'),
-    start: document.querySelector('button'),
-    win: document.querySelector('.win')
+    //start: document.querySelector('button'),
+    win: document.querySelector('.win'),
+    stats: document.querySelector('.stats')
 }
+
+selectors.moves.style.color = "black";
+selectors.timer.style.color = "black";
 
 let msg = document.querySelector('.msg');
 let msgText = document.querySelector('.msg p');
-let startBtn = document.querySelector('#btn');
+//let startBtn = document.querySelector('#btn');
 
 const state = {
     gameStarted: false,
@@ -75,12 +79,12 @@ const generateGame = () => {
 
 const startGame = () => {
     state.gameStarted = true
-    selectors.start.classList.add('disabled')
+    //selectors.start.classList.add('disabled')
 
-    startBtn.classList.add("lock");
-    startBtn.innerText = "Started";
-    msg.style.display = "block";
-    msgText.innerHTML = `Game has been Started`;
+    //startBtn.classList.add("lock");
+    //startBtn.innerText = "Started";
+    //msg.style.display = "block";
+    //msgText.innerHTML = `Game has been Started`;
 
     setTimeout(function() {
          msg.style.display = "none";
@@ -94,7 +98,7 @@ const startGame = () => {
         state.totalTime++
 
         selectors.moves.innerText = `${state.totalFlips} moves`
-        selectors.timer.innerText = `time: ${state.totalTime} sec`
+        selectors.timer.innerText = `${state.totalTime} sec`
     }, 1000)
 }
 
@@ -142,12 +146,14 @@ const flipCard = card => {
                     under <span class="highlight">${state.totalTime}</span> seconds
                 </span>
             `
-            startBtn.classList.remove("lock");
-            startBtn.style.color = "white";
-            startBtn.innerText = "Replay";
-            startBtn.addEventListener("click", event => {
-                window.location.reload();
-            })
+            // startBtn.classList.remove("lock");
+            // startBtn.style.color = "white";
+            // startBtn.innerText = "Replay";
+            // startBtn.addEventListener("click", event => {
+            //     window.location.reload();
+            // })
+
+            selectors.stats.style.display = 'none';
 
             clearInterval(state.loop)
         }, 1000)
