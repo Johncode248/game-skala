@@ -27,7 +27,7 @@ html{
     padding: 30px 8%;
     background: transparent;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
@@ -158,6 +158,22 @@ h1{
     border-radius: 15px;
 }
 
+.unia {
+    position: relative;
+    left: 0;
+    width: 17vw;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.unia img {
+    width: 100%;
+    height: auto;
+}
+
+
+
 .card:hover{
     /*background-color: rgb(62, 62, 62);*/
     /*color: white;*/
@@ -167,6 +183,7 @@ h1{
 }
 
 .card a{
+   
     border-radius: 10px;
     background-color: green;
     color: white;
@@ -175,6 +192,7 @@ h1{
     text-align: center;
     margin: 20px 50px;
     text-decoration: none;
+    bottom: 0px;
 }
 .card h2{
     text-align: center;

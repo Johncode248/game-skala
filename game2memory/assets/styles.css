@@ -8,7 +8,9 @@ html {
     font-family: sans-serif;
 }
 
-.msg {
+
+
+/* .msg {
 
     display: none;
     background-color: #282A3A;
@@ -16,13 +18,13 @@ html {
     border-radius: 5px;
     padding: 5px;
     box-shadow: 1px 1px 15px 2px rgb(111, 111, 111);
-}
+} */
 
 
 
 
 
-.msg p{
+/* .msg p{
     display: flex;
     padding: 0 10px;
     align-items: center;
@@ -31,7 +33,7 @@ html {
 
     font-size: 30px;
     color: white;
-}
+} */
 
 .game {
     position: absolute;
@@ -41,8 +43,10 @@ html {
 }
 
 .controls {
+    position: relative;
     display: flex;
-    gap: 20px;
+    justify-content: end;
+    
     margin-bottom: 20px;
 }
 
@@ -89,7 +93,7 @@ button.lock{
 
 .stats {
     color: #FFF;
-    
+    margin-right: 5px;
     font-size: 14pt;
     border: 3px solid white;
     padding: 13px;
@@ -101,9 +105,6 @@ button.lock{
     color: #ffffff;
 }
 
-.controls{
- margin-right: 10px;
-}
 
 
 .board-container {
@@ -122,10 +123,10 @@ button.lock{
 }
 
 .board {
-    padding: 20px;
+    padding: 13px;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-gap: 20px;
+    grid-gap: 13px;
 }
 
 .board-container.flipped .board {

@@ -63,7 +63,7 @@ const wordList = [
       hint: "Visual connection while speaking.",
     },
     {
-      word: "Tone",
+      word: "tone",
       hint: "Expression conveying attitude.",
     },
   
