@@ -161,7 +161,7 @@ h1{
 .unia {
     position: relative;
     left: 0;
-    width: 17vw;
+    width: 22vw;
     max-width: 300px;
     height: auto;
     object-fit: cover;
@@ -246,4 +246,40 @@ h1{
     background-repeat: no-repeat; /* Zapobieganie powtarzaniu się obrazu */
     background-position: center;
     margin: 10px; /* Dodajemy odstęp między logami */
+}
+
+@media (max-width: 600px) {
+
+
+    .unia {
+        position: relative;
+        left: 0;
+        width: 40vw;
+        max-width: 300px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    .unia img {
+        height: 40px;
+        width: auto;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+    .unia {
+        position: relative;
+        left: 0;
+        width: 40vw;
+        max-width: 300px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    .unia img {
+        height: 35px;
+        width: auto;
+    }
 }
