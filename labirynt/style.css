@@ -12,10 +12,12 @@ html, body {
     right: 0;
     background-color: #fff;
     font-family: 'Poppins', sans-serif;
+    overflow:scroll;
 }
 
 #view {
     margin-top: 30px;
+    overflow:scroll;
 }
 
 #mazeContainer {
@@ -24,12 +26,20 @@ html, body {
     display: inline-block;
     margin: auto;
     border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow:scroll;
+    /* max-width: 90vw; */
 }
 #mazeContainer #mazeCanvas {
     margin: 0;
     display: block;
     border: solid 2px black;
     height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow:scroll;
+    /* max-width: 90vw; */
 }
 input, select {
     cursor: pointer;
