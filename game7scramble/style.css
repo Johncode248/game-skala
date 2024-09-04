@@ -6,6 +6,21 @@
     font-family: sans-serif;
 }
 
+.back-arrow {
+    position: absolute;
+    top: 10px; /* Dostosuj odległość od góry */
+    left: 10px; /* Dostosuj odległość od lewej */
+    z-index: 1000; /* Ustaw wysoki z-index, aby było nad innymi elementami */
+}
+
+.back-arrow img {
+    transform: scale(0.7);
+    width: 10vw;
+    max-width: 70px;
+    height: auto;
+    object-fit: cover;
+}
+
 body {
     display: flex;
     align-items: center;
