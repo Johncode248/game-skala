@@ -20,6 +20,17 @@ html{
     color: #C13584;
 }
 
+p {
+    overflow: hidden;
+}
+
+p img {
+    width: 100%; /* Dopasowanie obrazu do szerokości kontenera */
+    height: auto; /* Zachowanie proporcji obrazu */
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
 .btn2{
     font-size: large;
     font-weight: bold;
