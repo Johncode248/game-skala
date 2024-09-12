@@ -23,6 +23,12 @@ p img {
     border-radius: 10px 10px 0 0;
 }
 
+.card-image img {
+    width: 262px;
+    height: 150px; 
+    border-radius: 10px 10px 0 0;
+}
+
 .fa-facebook {
     color: #3b5998;
 }
