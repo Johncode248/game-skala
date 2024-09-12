@@ -18,8 +18,8 @@ p {
 }
 
 p img {
-    width: 100%; /* Dopasowanie obrazu do szerokości kontenera */
-    height: auto; /* Zachowanie proporcji obrazu */
+    width: 262px;
+    height: 150px; 
     border-radius: 10px 10px 0 0;
 }
 
