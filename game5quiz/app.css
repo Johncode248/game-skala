@@ -3,6 +3,85 @@
     font-size: 62.5%;
 }
 
+
+/* #modal{
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+
+    /* display: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-inner {
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    text-align: center;
+    width: 380px;
+} */
+
+#modal {
+    /* Usuwamy tło modalu */
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.modal-inner {
+    /* Brak tła */
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    text-align: center;
+    color: grey; /* Ustawienie koloru tekstu na szary */
+    width: 80vw; /* Responsywna szerokość w zależności od szerokości okna */
+    max-width: 380px; /* Maksymalna szerokość na większych ekranach */
+}
+
+/* Responsywność dla mniejszych ekranów */
+@media (max-width: 600px) {
+    .modal-inner {
+        width: 90vw; /* Zwiększamy szerokość na bardzo małych ekranach */
+        padding: 10px 20px; /* Dopasowanie odstępów */
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-inner {
+        width: 50vw; /* Na większych ekranach modal będzie szerszy */
+    }
+}
+
+/* .modal-inner h2{
+    margin: 0;
+}
+
+.modal-inner p{
+    line-height: 24px;
+    margin: 10px 0;
+} */
+
+
 .back-arrow {
     position: absolute;
     top: 10px; /* Dostosuj odległość od góry */

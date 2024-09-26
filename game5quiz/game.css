@@ -1,3 +1,42 @@
+#Message-Container {
+    font-family: 'Poppins', sans-serif;
+    visibility: hidden;
+    color: white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.30);
+    z-index: 1;
+}
+#Message-Container #message {
+
+    display: grid;
+    place-items: center;
+    
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+#message h1 {
+    left: 0;
+    right: 0;
+    font-size: 3.6rem;
+    color: black;
+    margin-bottom: 1.8rem;
+}
+
+
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -47,3 +86,11 @@
     text-align: center;
     color: #fcb900;
 }
+@media only screen and (max-width: 600px) {
+    #Message-Container #message {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+}
+

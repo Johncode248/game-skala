@@ -97,6 +97,14 @@ let questions = [
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 10;
 
+function toggleVisablity(id) {
+    if (document.getElementById(id).style.visibility == "visible") {
+      document.getElementById(id).style.visibility = "hidden";
+    } else {
+      document.getElementById(id).style.visibility = "visible";
+    }
+  }
+
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -109,7 +117,18 @@ getNewQuestion = () => {
 
     if(availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
         // todo make here a window popup
-        return window.location.assign("/end.html"); 
+        document.getElementById('container').style.visibility = 'hidden';
+        // document.getElementById('modal').style.display = 'block';
+        
+
+        document.getElementById("moves").innerHTML = score + " out of 100";
+        toggleVisablity("Message-Container");  
+        
+          
+          
+    
+
+        //return//window.location.assign("/popup/index.html"); 
     }
     questionCounter++;
     questionCounterText.innerText = questionCounter + "/" + MAX_QUESTIONS;
